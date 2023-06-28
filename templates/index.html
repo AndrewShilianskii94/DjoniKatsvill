@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKYPROGRAM</title>
+  <link href="/static/css/styles.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container header">
+    <div class="header__wrapper">
+      <a href="/" class="header__logo-link">
+        <svg class="header__logo" width="177" height="26">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#skyprogram"></use>
+        </svg>
+      </a>
+      <a href="/templates/bookmarks.html" class="header__bookmark-btn">
+        <img src="/static/img/bookmark.png" alt="" class="header__bookmark-icon" width="28">
+        <span class="header__bookmark-counter">3</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="search">
+      <form action="/search" class="search__form">
+          <label>
+              <input type="search" class="search__input">
+          </label>
+          <label for="search" class="visually-hidden">Search</label>
+      </form>
+    </div>
+
+    <section class="items">
+      <div class="items__item item">
+        <div class="item__top">
+          <a href="/templates/user-feed.html" class="item__head">
+            <div class="item__ava-wrap">
+              <img src="/static/img/ava1.png" alt="" class="item__ava" width="47">
+            </div>
+            <span class="item__username">Johnny</span>
+          </a>
+        </div>
+        <a href="/templates/post.html" class="item__post-link">
+          <img src="/static/img/post1.jpg" alt="" width="348" class="item__post-img">
+        </a>
+        <p class="item__descr">Текст описания коротки...</p>
+        <div class="item__post-info">
+          <div class="item__counter">
+            <img src="/static/img/eye.png" alt="" class="item__counter-icon" width="26">
+            <span class="item__counter-text">212</span>
+          </div>
+        </div>
+        <div class="item__post-bottom">
+          <a href="/templates/post.html" class="item__btn-more">Подробнее</a>
+          <button type="button" class="item__bookmark-btn">
+            <img src="/static/img/bookmark.png" alt="" class="item__bookmark-icon" width="24">
+          </button>
+        </div>
+      </div>
+      <div class="items__item item">
+        <div class="item__top">
+          <a href="/templates/user-feed.html" class="item__head">
+            <div class="item__ava-wrap">
+              <img src="/static/img/ava2.png" alt="" class="item__ava" width="47">
+            </div>
+            <span class="item__username">Username</span>
+          </a>
+        </div>
+        <a href="/templates/post.html" class="item__post-link">
+          <img src="/static/img/post2.jpg" alt="" width="348" class="item__post-img">
+        </a>
+        <p class="item__descr">Текст описания короткий...</p>
+        <div class="item__post-info">
+          <div class="item__counter">
+            <img src="/static/img/eye.png" alt="" class="item__counter-icon" width="26">
+            <span class="item__counter-text">154</span>
+          </div>
+        </div>
+        <div class="item__post-bottom">
+          <a href="/templates/post.html" class="item__btn-more">Подробнее</a>
+          <button type="button" class="item__bookmark-btn">
+            <img src="/static/img/bookmark.png" alt="" class="item__bookmark-icon" width="24">
+          </button>
+        </div>
+      </div>
+      <div class="items__item item">
+        <div class="item__top">
+          <a href="/templates/user-feed.html" class="item__head">
+            <div class="item__ava-wrap">
+              <img src="/static/img/ava2.png" alt="" class="item__ava" width="47">
+            </div>
+            <span class="item__username">Jane</span>
+          </a>
+        </div>
+        <a href="/templates/post.html" class="item__post-link">
+          <img src="/static/img/post3.jpg" alt="" width="348" class="item__post-img">
+        </a>
+        <p class="item__descr">Текст описания короткий...</p>
+        <div class="item__post-info">
+          <div class="item__counter">
+            <img src="/static/img/eye.png" alt="" class="item__counter-icon" width="26">
+            <span class="item__counter-text">87</span>
+          </div>
+        </div>
+        <div class="item__post-bottom">
+          <a href="/templates/post.html" class="item__btn-more">Подробнее</a>
+          <button type="button" class="item__bookmark-btn">
+            <img src="/static/img/bookmark.png" alt="" class="item__bookmark-icon" width="24">
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div class="footer__wrapper">
+      <span class="footer__text">© 2023 SKYPROGRAM. All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+
+</html>
