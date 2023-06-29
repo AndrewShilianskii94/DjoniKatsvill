@@ -204,6 +204,12 @@ def api_get_post(post_id):
     except ValueError as e:
         return str(e), 404
 
+@app.route('/')
+def home():
+    """Обработчик корневого маршрута."""
+    posts = get_posts_all()
+    return render_template('index.html', posts=posts)
+
 
 # Error handlers
 @app.errorhandler(404)
