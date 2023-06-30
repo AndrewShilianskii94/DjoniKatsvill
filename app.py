@@ -1,4 +1,4 @@
-import json as json
+import json
 import logging
 import os
 from flask import Flask, render_template
